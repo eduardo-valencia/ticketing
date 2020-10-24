@@ -10,6 +10,8 @@ import { signoutRouter } from './routes/signout'
 import { signupRouter } from './routes/signup'
 import { errorHandler, NotFoundError } from '@tickets-448800/common'
 
+console.log('starting auth service')
+
 const app = express()
 app.set('trust proxy', true)
 
