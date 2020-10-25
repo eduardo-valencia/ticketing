@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: expiration
-          image: us.gcr.io/ticketing-287423/expiration
+          image: alex448800/expiration
           env:
             - name: JWT_KEY
               valueFrom:
