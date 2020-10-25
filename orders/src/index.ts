@@ -7,6 +7,8 @@ import { ExpirationCompleteListener } from './events/listeners/expiration-comple
 import { natsWrapper } from './nats-wrapper'
 import { PaymentCreatedListener } from './events/listeners/payment-created-listener'
 
+console.log('starting!')
+
 const start = async () => {
   if (!process.env.JWT_KEY) {
     throw new Error('JWT_KEY must be defined.')
