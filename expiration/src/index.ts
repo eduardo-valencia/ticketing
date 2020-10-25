@@ -1,6 +1,8 @@
 import { natsWrapper } from './nats-wrapper'
 import { OrderCreatedListener } from './events/listeners/order-created-listener'
 
+console.log('starting!')
+
 const start = async () => {
   if (!process.env.NATS_CLIENT_ID) {
     throw new Error('MONGO_URI is not defined.')
